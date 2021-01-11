@@ -1,0 +1,31 @@
+h1{
+	color: red;
+}
+.logo{
+	width: 11%;
+}
+.homework{
+	margin-top: -10px;
+	margin-bottom: 80px;
+	display: inline-block;
+	background-color: blue;
+	color: white;
+}
+.redtext{
+	color: red;
+}
+h2{
+	background-color: green;
+	color: white;
+}
+.secondsubtitle{
+	padding: 30px;
+}
+li{
+	border: 1px solid black;
+	font-size: 20px;
+}
+.ican{
+	margin-left: 100px;
+	/*text-align: center;*/
+}
