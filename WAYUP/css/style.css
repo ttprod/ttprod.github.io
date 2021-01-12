@@ -125,6 +125,7 @@ p {
 	width: 340px;
 }
 .footer-copyright {
+	margin: 0px;
 	padding-top: 60px;
 	font-size: 14px;
 	text-align: center;
