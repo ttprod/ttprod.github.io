@@ -1,28 +1,28 @@
 h1{
-	color: red;
+	color: #ff0000;
 }
 .logo{
-	width: 110px;
+	width: 150px;
 }
 .homework{
 	margin-top: -10px;
 	margin-bottom: 80px;
 	display: inline-block;
-	background-color: blue;
-	color: white;
+	background-color: #0000ff;
+	color: #fff;
 }
 .redtext{
-	color: red;
+	color: #ff0000;
 }
 h2{
-	background-color: green;
-	color: white;
+	background-color: #008000;
+	color: #fff;
 }
 .secondsubtitle{
 	padding: 30px;
 }
 li{
-	border: 1px solid black;
+	border: 1px solid #000;
 	font-size: 20px;
 }
 .ican{
