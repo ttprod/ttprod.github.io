@@ -146,6 +146,9 @@ p {
 		.main-img {
 			width: 500px;
 		}
+		.offer {
+			margin-top: 50px;
+		}
 }
 /* 768px - 992px */
 @media screen and (max-width: 992px) {
