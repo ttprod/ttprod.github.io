@@ -1,0 +1,143 @@
+/* 
+font-family: 'Inconsolata', monospace;
+font-family: 'Playfair Display', serif;
+font-family: 'Ubuntu', sans-serif; 
+*/
+body {
+    font-family: 'Playfair Display', serif;
+}
+.header {
+    margin-top: 30px;
+}
+.container {
+    width: 1062px;
+    margin: 0 auto;
+}
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-family: 'Inconsolata', monospace;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+}
+.nav ul {
+    display: flex;
+    
+}
+.nav li {
+    list-style: none;
+    margin-left: 100px;
+    text-transform: uppercase;
+}
+.nav a {
+    text-decoration: none;
+    color: #000;
+    transition: linear 0.1s;
+}
+.nav a:hover {
+    border-top: 5px solid #4d4d4d;
+    border-bottom: 5px solid #4d4d4d;
+    border-radius: 5px;
+}
+.main-bg {
+    width: 100%;
+    margin-top: 70px;
+}
+.second-container {
+    width: 893px;
+    margin: 0 auto;
+}
+.main {
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+.second-description {
+    display: block;
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    color: #d2cec5;
+}
+.main-title {
+    color: #626262;
+    font-weight: 400;
+    font-size: 30px;
+}
+.main-description {
+    color: #626262;
+    font-size: 14px;
+    line-height: 1.7;
+}
+.sub-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 120px;
+}
+
+.sub-title {
+    color: #626262;
+    font-weight: 400;
+    font-size: 30px;
+}
+.sub-description {
+    width: 415px;
+    color: #626262;
+    font-size: 14px;
+    line-height: 1.7;
+}
+.content a {
+    text-decoration: none;
+}
+.content img {
+    margin-top: 120px;
+    margin-bottom: 30px;
+    /* border-radius: 10px; */
+    transition: linear 0.5s;
+}
+.content img:hover {
+    border-radius: 20px;
+    transform: translateY(-4px);
+}
+.content h2 {
+    transition: linear 0.2s;
+}
+.content h2:hover {
+    color: #000;
+    transform: scale(1.02);
+}
+.newsletter {
+    width: 100%;
+    background-color: #f0f0f0;
+    height: 286px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-wrapper {
+    border-bottom: 2px solid rgb(82, 82, 82);
+}
+.input {
+    padding: 10px;
+    background-color: #f0f0f0;
+    width: 400px;
+    border: none;
+    outline: none;
+}
+.btn {
+    width: 32px;
+    height: 17px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-image: url("../img/send.png");
+    transition: linear 0.2s;
+}
+.btn:hover {
+    transform: rotate(-20deg);
+}
