@@ -276,9 +276,15 @@ nav {
 
 @media screen and (max-width: 50em) {
     .menu{
-        font-size: 0.9em;
+        font-size: 1em;
     }
     .div_wrapper {
         margin-top: 40px;
+    }
+    .logo {
+        margin-left: -20px;
+    }
+    .menu__border {
+        clip-path: ellipse(27% 50% at 51% 50%);
     }
 }
