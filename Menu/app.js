@@ -1,7 +1,4 @@
-// Designed by:  Mauricio Bucardo
-// Original image:
-// https://dribbble.com/shots/5619509-Animated-Tab-Bar
-
+// Навбар ===============//
 "use strict"; 
 
 const body = document.body;
@@ -21,13 +18,10 @@ function clickItem(item, index) {
         activeItem.classList.remove("active");
     }
 
-    
     item.classList.add("active");
     body.style.backgroundColor = bgColorsBody[index];
     activeItem = item;
-    offsetMenuBorder(activeItem, menuBorder);
-    
-    
+    offsetMenuBorder(activeItem, menuBorder);       
 }
 
 function offsetMenuBorder(element, menuBorder) {
@@ -43,7 +37,7 @@ offsetMenuBorder(activeItem, menuBorder);
 menuItems.forEach((item, index) => {
 
     item.addEventListener("click", () => clickItem(item, index));
-})
+});
 
 window.addEventListener("resize", () => {
     offsetMenuBorder(activeItem, menuBorder);
@@ -51,56 +45,16 @@ window.addEventListener("resize", () => {
 });
 
 
-const blockItem = document.querySelector("#block1");
-const blockItem2 = document.querySelector("#block2");
-const blockItem3 = document.querySelector("#block3");
-const blockItem4 = document.querySelector("#block4");
-const blockItem5 = document.querySelector("#block5");
+// Привязка блоков к кнопкам навбара //
 
-const blockBtn = document.querySelector("#btn1");
-const blockBtn2 = document.querySelector("#btn2");
-const blockBtn3 = document.querySelector("#btn3");
-const blockBtn4 = document.querySelector("#btn4");
-const blockBtn5 = document.querySelector("#btn5");
+const blockBtns = document.querySelectorAll(".menu__item");
+const blockItems = document.querySelectorAll(".block");
 
-blockBtn.addEventListener("click", () => {
-    blockItem.classList.add("main-block");
-    blockItem2.classList.remove("active-block");
-    blockItem3.classList.remove("active-block");
-    blockItem4.classList.remove("active-block");
-    blockItem5.classList.remove("active-block");
+blockBtns.forEach((item, idx) => {
+    item.addEventListener('click',() => {
+     Array.from(blockItems).forEach((item, idx) => {
+         item.classList.remove("active-block", "main-block");     
+     });
+     blockItems[idx].classList.add("active-block");
+    });
 });
-
-blockBtn2.addEventListener("click", () => {
-    blockItem2.classList.add("active-block");
-    blockItem.classList.remove("main-block");
-    blockItem3.classList.remove("active-block");
-    blockItem4.classList.remove("active-block");
-    blockItem5.classList.remove("active-block");
-});
-
-blockBtn3.addEventListener("click", () => {
-    blockItem3.classList.add("active-block");
-    blockItem.classList.remove("main-block");
-    blockItem2.classList.remove("active-block");
-    blockItem4.classList.remove("active-block");
-    blockItem5.classList.remove("active-block");
-});
-
-blockBtn4.addEventListener("click", () => {
-    blockItem4.classList.add("active-block");
-    blockItem.classList.remove("main-block");
-    blockItem2.classList.remove("active-block");
-    blockItem3.classList.remove("active-block");
-    blockItem5.classList.remove("active-block");
-});
-
-blockBtn5.addEventListener("click", () => {
-    blockItem5.classList.add("active-block");
-    blockItem.classList.remove("main-block");
-    blockItem2.classList.remove("active-block");
-    blockItem3.classList.remove("active-block");
-    blockItem4.classList.remove("active-block");
-});
-
-
