@@ -288,6 +288,6 @@ nav {
         /* margin-left: -20px; */
     }
     .menu__border {
-        clip-path: ellipse(27% 49.5% at 51% 50%);
+        clip-path: ellipse(27% 49.5% at 50% 50%);
     }
 }
