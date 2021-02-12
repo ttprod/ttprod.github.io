@@ -64,7 +64,7 @@ nav {
     display: flex;
     /* Works well with 100% width  */
     width: 100%;
-    font-size: 1.8em;
+    font-size: 1.5em;
     padding: 0 2.85em;
     position: relative;
     align-items: center;
@@ -137,6 +137,7 @@ nav {
     
     transform: scale(1);
     background-color: var(--bgColorItem);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
 
 }
 
@@ -171,7 +172,7 @@ nav {
 }
 
 .menu__border{
-
+    display: none;
     left: 0;
     bottom: -40%;
     width: 10em;
@@ -287,7 +288,8 @@ nav {
     .logo {
         /* margin-left: -20px; */
     }
-    .menu__border {
-        clip-path: ellipse(27% 49.5% at 50% 50%);
+    .menu__border { 
+        bottom: -65%;
+        clip-path: ellipse(20% 20% at 50% 50%);
     }
 }
