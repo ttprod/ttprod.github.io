@@ -278,11 +278,14 @@ nav {
     .menu{
         font-size: 1em;
     }
+    .menu button {
+        margin-left: 2.5em;
+    }
     .div_wrapper {
         margin-top: 40px;
     }
     .logo {
-        margin-left: -20px;
+        /* margin-left: -20px; */
     }
     .menu__border {
         clip-path: ellipse(27% 49.5% at 51% 50%);
