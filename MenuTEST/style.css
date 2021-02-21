@@ -363,6 +363,12 @@ nav {
         height: 2rem;
         margin-left: 0;
     }
+    
+    .div_wrapper {
+        width: 95%;
+    }
+
+
     .item-hover {
         height: 200px;
         margin-bottom: 30px;
