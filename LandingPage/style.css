@@ -86,6 +86,10 @@ body {
 .dropdown-menu {
     display: none;
 }
+.active {
+    display: block;
+    animation: fadeInFromNone 0.3s linear;
+}
 
 .dropdown-menu-wrapper {
     background: #fff;
@@ -98,6 +102,7 @@ body {
     width: 10em;
     box-shadow: 0 0  10px 1px rgba(0, 0, 0, 0.2);
     border-radius: 1em;
+    transition: all 2s linear;
 }
 
 #icon {
@@ -390,3 +395,19 @@ footer > span {
         padding: 0 0.5em;
     }    
 }
+
+
+@keyframes fadeInFromNone {
+    0% {
+      display: none;
+      opacity: 0;
+    }
+    1% {
+      display: block;
+      opacity: 0;
+    }
+    100% {
+      display: block;
+      opacity: 1;
+    }
+  }
