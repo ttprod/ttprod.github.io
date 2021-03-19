@@ -11,8 +11,11 @@ body {
     background: url(../img/back.png)no-repeat;
     background-size: cover;
     background-position: center;
+<<<<<<< Updated upstream
     
     /*backdrop-filter: blur(5px);*/
+=======
+>>>>>>> Stashed changes
 }
 .side-bar {
     background: rgba(255, 255, 255, 0.1);
