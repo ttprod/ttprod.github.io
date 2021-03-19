@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1e1e1e;
+    margin: 0;
+    color: #fff;
+    font-family: "Ubuntu", sans-serif;
+    text-align: left;
+    outline: 0;
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.wrapper {
+    min-height: 100%;
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.main {
+    width: 270px;
+    height: 100%;
+    z-index: 100;
+    top: 0;
+    float: left;
+    position: sticky;
+}
+
+.main .container {
+    position: relative;
+    width: auto;
+    height: 100vh;
+    margin: 0 40px 0 50px;
+}
+
+.logo {
+    padding-top: 41px;
+    padding-bottom: 42px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 2em;
+    padding-right: 0.2em;
+}
+
+.logo a {
+    font-size: 1.25em;
+    text-transform: uppercase;
+    color: #fff;
+}
+.logo span {
+    color: #0d84fb;;
+}
+
+
+aside.main nav {
+    display: flex;
+    flex-direction: column;
+    padding-top: 16px;
+    white-space: nowrap;
+}
+
+
+.subtitle_2 {
+    font-weight: 400;
+    font-size: 13px;
+    color: #8e8e8e;
+    text-transform: uppercase;
+    line-height: 16px;
+}
+
+.main nav a {
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    height: 40px;
+    padding-left: 12px;
+    margin-bottom: 8px;
+    opacity: 0.5;
+    margin-left: -10px;
+    -webkit-transition: all 0.2s 0s ease;
+    -moz-transition: all 0.2s 0s ease;
+    -o-transition: all 0.2s 0s ease;
+    transition: all 0.2s 0s ease;
+}
+
+
+/* Header ---------*/
+main {
+    padding-right: 50px;
+    display: block;
+    overflow: hidden;
+    padding-bottom: 320px;
+}
+
+header {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 32px 0;
+}
+header form {
+    width: 100%;
+    max-width: 736px;
+}
+
+header input {
+    width: 100%;
+    border: 1px solid rgba(142, 142, 142, 0);
+    outline: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font: inherit;
+    color: rgb(120, 120, 120);
+    line-height: 22px;
+    
+}
+
+#story {
+    background-color: #2b2b2b;
+    background-image: url(../img/search.svg);
+    background-repeat: no-repeat;
+    background-position: 24px;
+    background-size: 20px;
+    padding-left: 60px;
+}
+
+/* Social -----------*/
+
+.social {
+    display: inline-flex;
+    width: fit-content;
+    margin-left: 32px;
+}
+
+.social a div {
+    background: rgba(66, 66, 66, 0.5);
+    padding: 7px;
+    margin-right: 16px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s 0s ease;
+    -moz-transition: all 0.2s 0s ease;
+    -o-transition: all 0.2s 0s ease;
+    transition: all 0.2s 0s ease;
+}
+
+.social a div:hover {
+    background: #424242;
+}
+
+.social a div img {
+    display: block;
+    height: 14px;
+    width: 14px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 11px 24px;
+    border-width: 0;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 100%;
+    white-space: nowrap;
+    font-weight: 500;
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+    line-height: 18px;
+    background: #0d84fb;
+    border-radius: 8px;
+    -webkit-transition: all 0.2s 0s ease;
+    -moz-transition: all 0.2s 0s ease;
+    -o-transition: all 0.2s 0s ease;
+    transition: all 0.2s 0s ease;
+}
+
+.button:hover {
+    background: #43a0ff;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav img {
+    margin-right: 1em;
+}
+nav a:hover {
+    text-decoration: none;
+    background: #2b2b2b;
+}
+
+/* Slider ---------- */
+
+.slide {
+    background-color: #818da600;
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    height: 100%;
+    max-height: 403px !important;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+.slide__wrapper {
+    width: 6720px;
+}
+
+.slide {
+    width: 200px;
+}
+
+
+
