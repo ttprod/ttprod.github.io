@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
 
 * {
     box-sizing: border-box;
@@ -123,6 +123,14 @@ header input {
     font: inherit;
     color: rgb(120, 120, 120);
     line-height: 22px;
+}
+
+hr {
+    height: 2px;
+    border: 0;
+    background-color: #2e2e2e;
+    margin-top: 40px;
+    margin-bottom: 0;
 }
 
 #story {
@@ -251,26 +259,29 @@ nav a:hover {
     justify-content: space-between;
     align-items: baseline;
     width: 100%;
-    margin-top: 40px;
-    margin-bottom: 32px;
+    margin-top: 2.5em;
+    margin-bottom: 1em;
+    font-size: 1.5em;
 }
 
-.title a:hover {
-    transition: color 0.3s ease;
-}
-
-.title a:hover {
+.title a {
+    font-size: 0.7em;
     color: #43a0ff;
+}
+
+.title a:hover {
+    text-decoration: underline;
 }
 
 .card-grid {
     display: grid;
-    grid-template-rows: repeat(4, 1fr);
+    /* grid-template-rows: repeat(4, 1fr); */
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1em;
     row-gap: 2em;
     justify-items: center;
     margin-top: 1em;
+    margin-bottom: 2em;
 }
 .code-item {
     cursor: pointer;
@@ -289,4 +300,84 @@ nav a:hover {
 }
 .text a {
     font-size: 1.5em;
+    font-weight: lighter;
+}
+
+
+/* Notes ---------*/
+.notes {
+    display: grid;
+    /* grid-template-rows: repeat(4, 1fr); */
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    row-gap: 2em;
+    justify-items: center;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.article-item  {
+    background: url(../img/note1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    display: grid;
+    border: 2px solid #424242;
+    border-radius: 8px;
+    height: 352px;
+    -webkit-transition: all 0.2s 0s ease;
+    -moz-transition: all 0.2s 0s ease;
+    -o-transition: all 0.2s 0s ease;
+    transition: all 0.2s 0s ease;
+}
+
+.item__2 {
+    background: url(../img/note2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+} 
+
+.item__3 {
+    background: url(../img/note3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+} 
+
+.article-item:hover {
+    border: 2px solid #43a0ff;
+}
+
+article-item .container {
+    display: grid;
+    margin: 32px 24px 24px;
+}
+
+.caption {
+    position: relative;
+    top: 1em;
+    left: 1em;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: monospace;
+    font-size: 0.8em;
+}
+
+.text-notes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60%;
+    padding: 2em;
+    margin-top: 3.5em;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.text > h4 {
+    font-size: 2em;
+}
+
+.body-2 {
+    line-height: 1.2em;
+    font-weight: lighter;
 }
